@@ -17,20 +17,21 @@ li{
 #main-menu{
 	position:fixed;
 	bottom:0;
-	height:24px;
+	height:36pt;
 	width:100%;
 	background:#006;
-	line-height:24px;
+	line-height:36pt;
 }
 #main-menu a{
 	display:block;
 	float:left;
-	width:24px;
+	width:36pt;
 	color:#FFF;
 	background:#06F;
 	border-right:#000 solid 1px;
 	text-align:center;
 	text-decoration:none;
+	font-size:24px;
 }
 #main-container{
 	padding-bottom:25px;

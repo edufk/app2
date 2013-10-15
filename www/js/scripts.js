@@ -27,6 +27,6 @@ var app = {
     },
 	
 	goToPage: function(pageId){
-		$("#main-content").load("page" + pageId + ".html");
+		$("#main-container").load("page" + pageId + ".html");
 	}
 };

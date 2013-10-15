@@ -4,6 +4,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
+		$.mobile.allowCrossDomainPages = true;
     },
     // Bind Event Listeners
     //

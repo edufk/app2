@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#main-menu{
+	position:fixed;
+	bottom:0;
+	height:24px;
+	width:100%;
+	background:#006;
+	line-height:24px;
+}
+#main-menu a{
+	display:block;
+	float:left;
+	width:24px;
+	color:#FFF;
+	background:#06F;
+	border-right:#000 solid 1px;
+	text-align:center;
+	text-decoration:none;
+}
+#main-container{
+	padding-bottom:25px;
+}

@@ -1,6 +1,9 @@
 // JavaScript Document
 
 var app = {
+	pictureSource: null,
+	destinationType: null,
+	
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -24,9 +27,22 @@ var app = {
             e.preventDefault();
 			app.goToPage($(this).attr("data-pageId"));
         });
+		app.pictureSource = navigator.camera.PictureSourceType;
+		app.destinationType = navigator.camera.DestinationType;
     },
 	
 	goToPage: function(pageId){
 		$("#main-container").load("page" + pageId + ".html");
+	},
+	
+	displayThumbnail: function(imageData){
+		var thumbnail = document.getElementById('thumbnail');
+		thumbnail.src = "data:image/jpeg;base64," + imageData;
+	},
+	capturePhoto: function() {
+		navigator.camera.getPicture(displayThumbnail, onFail, { quality: 50 });
+	},
+	onFail: function(message) {
+		alert('Failed because: ' + message);
 	}
 };
